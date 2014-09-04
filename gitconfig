@@ -1,0 +1,15 @@
+[user]
+  name = FirstName LastName
+  email = your.email@example.com
+  username = YourGithubName
+[color]
+  ui = true
+[alias]
+  shas = log --pretty=format:\"%H\"
+  hist = log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short
+  authors = ! git log --format=\"%ae %an\" | sort -u | column -t
+[push]
+  default = upstream
+[core]
+  excludesfile = ~/.gitignore
+  editor = atom -w
