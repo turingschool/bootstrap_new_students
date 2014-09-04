@@ -5,11 +5,28 @@ Dotfiles are files that configure the applications you use.
 They are named this because they typically begin with a dot,
 which makes them hidden by default in unix.
 
+
 Prerequeisites
 --------------
 
 You will need to have Git installed and know how to navigate the file system.
-If you don't have these, remind me to go find them and come update these instructions.
+For the basics of these, check out [Terminal and Editor](http://tutorials.jumpstartlab.com/academy/workshops/terminal_and_editor.html).
+To get your environment loaded, check out [Environment](http://tutorials.jumpstartlab.com/topics/environment/environment.html).
+
+
+Topics I need to be sure they cover:
+------------------------------------
+
+- Homebrew
+- OS X Command Line Development Tools
+- Git `brew install git`
+- RVM
+- Ruby (via RVM)
+- Atom
+- Seeing is Believing
+- Pry
+- iTerm
+
 
 Installation
 ------------
