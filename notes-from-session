@@ -9,6 +9,7 @@ http://today.turing.io/outlines/2014-09-08/
   Intro to OS X, Terminal & Editor (2:00-3:00)
     http://tutorials.jumpstartlab.com/academy/workshops/terminal_and_editor.html
     I also talked about anatomy of a command-line invocation (more below)
+    We also added SeeingIsBelieving and pry to everyone's envs.
 
 
 To make it better next time:
@@ -21,8 +22,11 @@ To make it better next time:
   If I had a whiteboard, provide them a list of what these files are,
   and what each of them does, so they have a better high-level map of what's going on.
 
+ADD THESE:
+  Anatomy of a command-line invocation
   Include cheatsheets for the command-line
-
+  SiB installation instructions for Atom/rvm
+  pry installation
 
 Anatomy of a command-line invocation
   $ program_name arg1 arg2 arg3
