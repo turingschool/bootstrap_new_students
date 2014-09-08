@@ -1,0 +1,56 @@
+Ran session on Mon Sep 8:
+-------------------------
+
+http://today.turing.io/outlines/2014-09-08/
+  Laptop & Environment Setup (1:00-2:00)
+    http://tutorials.jumpstartlab.com/topics/environment/environment.html
+    https://github.com/turingschool/bootstrap_new_students
+    I went and did the dotfiles while Ruby was installing
+  Intro to OS X, Terminal & Editor (2:00-3:00)
+    http://tutorials.jumpstartlab.com/academy/workshops/terminal_and_editor.html
+    I also talked about anatomy of a command-line invocation (more below)
+
+
+To make it better next time:
+  Even though there's 2 independent lessons,
+  would probably be better for them if we do anatomy of a command-line invocation first.
+  This would give them better tools to know what's happening as we go through env setup
+
+  I'd like to incorporate the markdown files into that repo, as well.
+
+  If I had a whiteboard, provide them a list of what these files are,
+  and what each of them does, so they have a better high-level map of what's going on.
+
+  Include cheatsheets for the command-line
+
+
+Anatomy of a command-line invocation
+  $ program_name arg1 arg2 arg3
+
+  $              - the dollar sign indicates the prompt (when you see this in a tutorial, it means run the command from the command-line)
+  program_name   - the first piece of consecutive text is the name of the program being run
+  arg1 arg2 arg3 - after a space, is a list of space separated arguments
+
+  An argument is a piece of text you enter in, that is made available to the program
+  Arguments that begin with dashes, e.g. the "-l" in "ls -l" are,
+  by convention, interpreted as information that tells the program to do things differently
+  e.g. "ls" still lists the files, but if we give it a "-l", that tells it to list them in the "long" format.
+
+  Question:
+    what is the program / args here:
+      $ echo a b c
+    how many args are there?
+    what will it print out?
+    what if we do this:
+      $ echo a b        c
+    why?
+
+    What if we wanted to preserve that space?
+    We get $ echo a "b      c"
+    how many args now?
+
+  Question:
+    What are we giving to the "atom" program here:
+    $ atom ~ /Desktop/myfile
+    What's the problem?
+    What's the correct solution?
