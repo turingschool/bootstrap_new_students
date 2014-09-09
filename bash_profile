@@ -32,7 +32,10 @@ function fullpath {
   ' "$@"
 }
 
-# shortcut for bundle exec
+# Enable git's tab-completion library
+source /usr/local/etc/bash_completion.d/git-completion.bash
+
+# Shortcut for bundle exec
 alias be="bundle exec"
 
 # Prompt
