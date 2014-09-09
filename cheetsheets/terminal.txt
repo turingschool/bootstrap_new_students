@@ -1,0 +1,81 @@
+Tutorial style walkthrough:
+  https://duckduckgo.com/?q=cheetsheet+of+unix+commands
+
+iTerm
+  The terminal application that we run
+  You also have one called "Terminal"
+
+Directories (folders... but use the word "directory")
+  ~                  The home directory (where your Desktop and Downloads are)
+  .                  The current directory (the output of pwd)
+  ..                 The parent directory (you had to go through it to get to current location)
+  /                  The root directory, highest directory in your computer.
+  ~/Downloads        Within the home directory, a directory named Downloads
+
+Other notes:
+  Many programs output nothing if they succeed (e.g. cp)
+  Configuration for bash (e.g. shell colours) is in ~/.bash_profile (edit this with atom)
+
+Unix program examples
+  bash                     The "shell", the default program that lets us interact with the computer (when we are typing commands, we are in the shell)
+  pwd                      "Print Working Directory", our current location in file system
+  ls                       List files in our directory
+  ls ~                     List files in other/dir
+  ls -l                    List files in long-format
+  l                        List files with all the custom options we set up for you
+  touch notes              Makes an empty file called "notes"
+  rm notes                 Remove the file called "notes"
+  which ruby               Tell me where the ruby program is located
+  cp .pryrc ~/.pryrc       Copy the file "./.pryrc" in the current directory to "~/.pryrc" (ie copy from current dir to home dir)
+  cp .pryrc ~/.pryrc       Move the file "./.pryrc" in the current directory to "~/.pryrc"
+  mv program program.rb    This move renames the file
+  mkdir deleteme           Makes a directory named "deleteme"
+  cd ~/deleteme            Change Directories to "deleteme" within the home directory
+  echo a b c               Print the arguments (will print "a b c")
+  env                      List out all your environment variables
+  cat ~/.bash_profile      Prints the contents of your bash profile
+
+Other programs
+  ruby my_program.rb       Run the Ruby interpreter against the file "my_program.rb" in the current directory
+  gem install pry          Install the pry gem (program and code that we can now use)
+  brew install git         Use the homebrew program to install the git program
+  rvm use 2.1.2            Tell rvm that I want my Ruby to be 2.1.2, it will change the environment to make this true (assuming its installed)
+  git log                  Show every time I committed my code (think of this like every place the program was saved) -- this would need to be run inside of a git repository
+  pry                      Launch pry, a repl that's better than irb
+  atom .                   Open my current directory in the Atom text editor
+
+Bash script (programming language you can type in the shell -- the same place you enter the programs to run)
+  a=1                      Set the variable a to have the value 1 (`a = 1` would be "invoke the program a, giving it the arguments "=" and "1")
+  export a=1               Set the environment variable a to have the value 1 -- Environment variables are available to programs you run
+  alias l="ls -lFGgohq"    When I type "l", the shell translates that to "ls -lFGgohq", so I don't have to remember those flags
+  source ~/.bash_profile   Execute the code in my home directory's bash_profile
+  type gs                  Tell me what gs is (like which, but will also tell you about aliases and functions)
+
+Playing with inputs and outputs
+  Every program has one input, called the "standard input", often abbreviated as "stdin"
+  By default, this is connected to your keyboard. For example:
+  $ ruby -e 'puts "You said: #{gets.inspect}!"'
+  This program will wait for you to enter a value on the keyboard, then print it out.
+  You can override stdin with "<", to instead pull from a file.
+  $ ruby -e 'puts "You said: #{gets.inspect}!"' < ~/.bash_profile
+
+  Every program has two outputs, the "standard output" (stdout) and the "standard error" (stderr)
+  By default, both of these are set to display on your screen
+  You can override stdout with ">", and stderr with "2>" to instead write to a flie
+  $ ruby -e '$stdout.puts("hello"); $stder.puts("world")'
+
+  $ ruby -e '$stdout.puts("hello"); $stder.puts("world")' > f
+  $ cat f
+
+  $ ruby -e '$stdout.puts("hello"); $stder.puts("world")' 2> f
+  $ cat f
+
+  $ ruby -e '$stdout.puts("hello"); $stder.puts("world")' > f1  2> f2
+  $ cat f1
+  $ cat f2
+
+  $ rm f f1 f2
+
+  You can connect one program's output to another program's input with a "pipe"
+  $ echo world
+  $ echo world | ruby -e 'puts "hello, #{gets}"'
