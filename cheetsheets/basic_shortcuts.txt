@@ -1,0 +1,119 @@
+ATOM
+
+    command n
+      creates a new tab in atom
+
+    control tab
+      switches between open tabs
+
+    command shift ] or command shift [
+      switches between open tabs
+
+    command } or command {
+      tabs the line or highlighted lines to the right or left
+
+    command z
+      undo
+
+    command y
+      redo
+
+    shift arrow keys
+      highlights text
+
+    comand c
+      copies highlighted text
+
+    command v
+      pastes highlighted text
+
+    control a
+      moves your curser to the beginning of the line
+
+    control e
+      moves your curser to the end of the line your on
+
+    command arrow keys
+      moves your curser to the beginning or end of a line
+
+    control k
+      deletes everything to the right of the curser
+
+    command d
+      finds the next place you used the word your curser is currently on.
+      repeatedly hitting it will highlight additional places the word was used
+      *very helpful if you need to find all the places you used a particular word
+
+    command \
+      opens/closes the sidebar
+
+    command k arrow
+      splits your screen
+
+    command + or command -
+      zooms in or out of your screen
+
+    command f
+      opens a window so you can find words or phrases
+      *esc will close the window
+
+    command s
+      saves file
+
+    command ,
+      opens settings
+
+    command option b
+      runs seeing is believing
+
+    command option v
+      removes seeing is believing code
+
+    control d
+      deletes one space to the right
+
+
+
+
+ITERM
+
+    touch <filename>
+      creates a new file
+      *don't forget to specify what type of file (ex: .rb)
+      *use underscores to define spaces
+
+    mkdir <name>
+      creates a new directory
+
+    l or ls
+      lists the files in your current directory
+
+    ls -la
+      lists all files(including invisible ones) in your current directory
+
+    cd ..
+      takes you back one directory
+
+    cd <filename>
+      takes you to that file
+
+    atom .
+      opens all the files in the current directory in atom
+
+    atom <filename>
+      opens that file in atom
+
+    ruby <filename>
+      runs that file
+
+    pry
+      gets you into a pry session
+
+    exit
+      gets you out of a pry session
+
+    control d
+      gets you out of a pry session or a loop
+
+    pwd
+      prints what directory you're in
