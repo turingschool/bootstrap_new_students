@@ -28,19 +28,37 @@ ATOM
       pastes highlighted text
 
     control a
-      moves your curser to the beginning of the line
+      moves your cursor to the beginning of the line
 
     control e
-      moves your curser to the end of the line your on
+      moves your cursor to the end of the line your on
 
     command arrow keys
-      moves your curser to the beginning or end of a line
+      moves your cursor to the beginning or end of a line
+    
+    option left
+      moves your cursor to the beginning of the previous word
 
+    option right
+      moves your cursor to the end of the next word
+    
+    fn up arrow
+      scroll up one page
+
+    fn down arrow
+      scroll down one page
+
+    fn left arrow
+      scroll to the beginning of a document
+    
+    fn right arrow
+      scroll to the end of a document
+    
     control k
-      deletes everything to the right of the curser
+      deletes everything to the right of the cursor
 
     command d
-      finds the next place you used the word your curser is currently on.
+      finds the next place you used the word your cursor is currently on.
       repeatedly hitting it will highlight additional places the word was used
       *very helpful if you need to find all the places you used a particular word
 
@@ -69,7 +87,7 @@ ATOM
     command option v
       removes seeing is believing code
 
-    control d
+    control d or fn delete
       deletes one space to the right
 
 
@@ -97,6 +115,9 @@ ITERM
     cd <filename>
       takes you to that file
 
+    cd ~/ 
+      takes you to your home directory
+
     atom .
       opens all the files in the current directory in atom
 
@@ -117,3 +138,18 @@ ITERM
 
     pwd
       prints what directory you're in
+
+
+GENERAL OS X SHORTCUTS
+
+    command shift 3 
+      captures the screen to a file on the desktop
+
+    command shift control 3
+      captures the screen to the clipboard
+
+    command shift 4 
+      captures a selection of the screen to a file on the desktop or hit space bar to capture an entire window
+    
+    commmand shift control 4
+      captures a selection of the screen to the clipboard or hit space bar to capture an entire window
