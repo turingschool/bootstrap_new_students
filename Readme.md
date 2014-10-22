@@ -13,6 +13,9 @@ Setup Your Environment
   [This tutorial](http://tutorials.jumpstartlab.com/topics/environment/environment.html).
 * For the basics on how to work in the terminal,
   check out [Terminal and Editor](http://tutorials.jumpstartlab.com/academy/workshops/terminal_and_editor.html).
+* If you don't already have a place you want to put your material from the school,
+  then go ahead a directory called "Turing" in your home folder: `mkdir ~/Turing`
+  congrats, now you have one :P
 
 Dotfiles
 ========
@@ -45,10 +48,9 @@ The leading dollar sign in the code samples below
 implies the commands to the right are to be
 run from a terminal.
 
-First clone this repo somewhere (it doesn't matter where,
-but probably put it someplace that won't annoy you).
-
+First clone this repo into your Turing directory.
 ```sh
+$ cd ~/Turing
 $ git clone https://github.com/turingschool/bootstrap_new_students.git
 ```
 
