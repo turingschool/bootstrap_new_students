@@ -46,7 +46,7 @@ ATOM
       moves your cursor to the beginning of the line
 
     control e
-      moves your cursor to the end of the line your on
+      moves your cursor to the end of the line you're on
 
     command arrow keys
       moves your cursor to the beginning or end of a line
